@@ -135,6 +135,27 @@ body {
     border-radius: 10px;
 }
 
+.no-underline {
+    text-decoration: none; /* Убираем подчёркивание почты */
+    color: inherit; /* Оставляем стандартный цвет текста */
+}
+
+.phone {
+    font-size: 20px; /* Сделал немного меньше */
+    margin: 5px 0; /* Уменьшил расстояние между номерами */
+}
+
+.contact a {
+    text-decoration: none; /* Убрал подчёркивание */
+    color: #333; /* Сделал цвет более нейтральным */
+    font-weight: normal;
+}
+
+.contact a:hover {
+    color: #00cc66; /* При наведении цвет меняется на зелёный */
+}
+
+
 /* Адаптация под мобильные устройства */
 @media (max-width: 768px) {
     .header {
