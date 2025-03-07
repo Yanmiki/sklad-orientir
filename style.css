@@ -188,6 +188,13 @@ body {
     overflow-y: auto;
 }
 
+.confirm {
+    font-family: Inter, sans-serif;
+    text-align: center;
+    color: green;
+    font-size: 15px;
+}
+
 /* Адаптация под мобильные устройства */
 @media (max-width: 768px) {
     .header {
