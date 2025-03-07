@@ -19,7 +19,7 @@
     <!-- Подключение стилей -->
     <link rel="stylesheet" href="style.css">
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
+    <script type="text/javascript">
        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
        m[i].l=1*new Date();
        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
@@ -40,21 +40,11 @@
     </div>
     <div class="container">
         <div class="content">
-            <h2>Продайте ваши стеллажи по выгодной цене</h2>
-            <p>Мы предлагаем самые высокие цены на складские стеллажи. Бесплатная оценка, демонтаж и вывоз!</p>
-
-            <div class="advantages">
-                <div class="advantage"><img src="images/fast.png" alt="Иконка"> Быстро</div>
-                <div class="advantage"><img src="images/key.png" alt="Иконка"> Под ключ</div>
-                <div class="advantage"><img src="images/ruler.png" alt="Иконка"> Замеряем</div>
-            </div>
-
-            <img src="images/main_pic.png" alt="Главное изображение" class="photo-placeholder" id="mainPhoto">
-
-            <div class="slider">
-                <img src="images/main_pic.png" alt="Главная фото">
-                <img src="images/1slide.png" alt="Фото 1">
-                <img src="images/2slide.png" alt="Фото 2">
+            <div class="agreement">
+                <h2>Согласие на обработку персональных данных</h2>
+                <p>Настоящим я, заполняя форму на сайте, даю согласие ООО "СКЛАД-ОРИЕНТИР" (ИНН: 7743455787, ОГРН: 1247700562977, адрес: 125493, Россия, г. Москва, ул. Смольная, дом 2, оф. Помещ. 2/5) на обработку моих персональных данных в соответствии с Федеральным законом №152-ФЗ "О персональных данных" от 27.07.2006 года.</p>
+                <p>Обработка персональных данных осуществляется в целях предоставления информации о выкупе складских стеллажей, проведения консультаций, а также выполнения обязательств по договорам. Согласие предоставляется на осуществление любых действий с использованием средств автоматизации или без таковых, включая сбор, запись, систематизацию, накопление, хранение, уточнение, извлечение, использование, передачу, блокирование, удаление и уничтожение данных.</p>
+                <p>Согласие действует бессрочно и может быть отозвано мной в любое время путём направления письменного уведомления на адрес электронной почты: <a href="mailto:info.sklad.orientir@mail.ru">info.sklad.orientir@mail.ru</a>.</p>
             </div>
 
             <div class="contact-section">
@@ -79,7 +69,7 @@
                     <h3>Оставьте заявку</h3>
                     <iframe src="https://forms.yandex.ru/u/67c36220f47e73cc6782ce31/?iframe=1"
                             width="100%" height="650" frameborder="0" name="yandex-form"></iframe>
-                    <a href="index_confirm.html" class="confirm" target="_blank">Согласие на обработку персональных данных</a>
+                    <a href="#" class="confirm">Согласие на обработку персональных данных</a>
                 </div>
             </div>
         </div>
@@ -89,5 +79,13 @@
         <p>Реквизиты: ООО "СКЛАД-ОРИЕНТИР", ИНН: 7743455787, ОГРН: 1247700562977, Адрес: 125493, РОССИЯ, г Москва, ул Смольная, дом 2, оф Помещ. 2/5</p>
     </div>
     <script src="script.js"></script>
+    <!-- Скрипт для перенаправления после отправки формы -->
+    <script>
+        window.addEventListener('message', function(event) {
+            if (event.origin === 'https://forms.yandex.ru' && event.data === 'submitSuccess') {
+                window.location.href = 'https://yanmiki.github.io/Buyout-of-warehouse-shelving/thank-you.html';
+            }
+        });
+    </script>
 </body>
 </html>
